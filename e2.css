@@ -1,0 +1,113 @@
+body {
+  background-image: url('images/fondi1.png'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#titulo{
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  top: 20px;
+  position: absolute;
+  color: white;
+  background-color: gray;
+}
+#audio{
+display: none
+}
+
+
+
+#pizarra{
+position: absolute;
+width: 350px;
+right: 30px;
+}
+
+/*Todo lo de la barraaaaaaaaaaaaaa*/
+#container {
+  width:120px;
+  height:120px;
+
+  z-index:2;  
+}
+
+#img_lem{
+  width:150px;
+  /*height:120px;*/
+  left: 130px;
+  position:absolute;
+  top:30px;
+}
+
+.pulse1{
+  animation:scale 5s ease-in-out infinite;
+}
+.pulse2{
+  animation:scale 4s ease-in-out;
+}
+.pulse3{
+  animation:scale 3s ease-in-out;
+}
+.pulse4{
+  animation:scale 2s ease-in-out;
+}
+.pulse5{
+  animation:scale 1s ease-in-out;
+}
+.pulse6{
+  animation:scaleover 2s ease-in-out;
+}
+
+.progress{
+ position:absolute;
+  left: 180px;
+  top:150px;
+  z-index:-1;
+  border: 2px solid black; 
+  background: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+.progress-bar-vertical {
+  width: 50px;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+  float: left;
+}
+
+.progress-bar-vertical .progress-bar {
+  width: 100%;
+  height: 0;
+  /*-webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;*/
+}
+
+.lemon{
+  background-color: #FFA500 !important;
+}
+
+
+
+
+
+@keyframes scale {
+    0% {transform:scale(0.9);}
+    50% {transform:scale(1);}
+    100% {transform:scale(0.9);}
+}
+@keyframes scaleover {
+    0% {transform:scale(1);}
+    50% {transform:scale(2);}
+    100% {transform:scale(3);}
+}
+
+
+  
